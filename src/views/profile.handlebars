@@ -1,0 +1,8 @@
+<h1>Perfil</h1>
+{{#if user}}
+    <p><b>Nombre:</b> {{user.first_name}} {{user.last_name}}</p>
+    <p><b>Email:</b> {{user.email}}</p>
+    <p><b>Rol:</b> {{user.role}}</p>
+{{else}}
+    <p>No hay usuario logueado.</p>
+{{/if}}
